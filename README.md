@@ -42,7 +42,7 @@ Make provides an easy way to speed up deployment by enabling parallelism via `ma
 ## Triggering Cloud Functions
 
 After deployment you'll get a URL like `http://us-east1-your-project-name.cloudfunctions.net/random`.
-One way to trigger the functions is to navigate to
+One way to trigger the functions is to navigate with your browser to
 ```
 http://us-east1-your-project-name.cloudfunctions.net/random?target=https://en.wikipedia.org
 ```
