@@ -1,0 +1,8 @@
+{
+  "name": "exercise",
+  "main": "index.js",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.0.0",
+    "puppeteer": "^13.4.1"
+  }
+}
