@@ -35,7 +35,7 @@ projects/your-project-name/locations/australia-southeast1
 ```
 
 In order to deploy to single/multiple regions just run `make us-east1 asia-east1`.
-**Be careful!** One can also deploy to all the available regions by running `make deploy`.
+One can also deploy to all(be careful) the available regions by running `make deploy`.
 
 Make provides an easy way to speed up deployment by enabling parallelism via `make -j 10 deploy`.
 
