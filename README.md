@@ -9,29 +9,29 @@ List all the available regions:
 $ gcloud functions regions list
 
 NAME
-projects/single-loop-342704/locations/us-central1
-projects/single-loop-342704/locations/us-east1
-projects/single-loop-342704/locations/us-east4
-projects/single-loop-342704/locations/us-west1
-projects/single-loop-342704/locations/us-west2
-projects/single-loop-342704/locations/us-west3
-projects/single-loop-342704/locations/us-west4
-projects/single-loop-342704/locations/europe-central2
-projects/single-loop-342704/locations/europe-west1
-projects/single-loop-342704/locations/europe-west2
-projects/single-loop-342704/locations/europe-west3
-projects/single-loop-342704/locations/europe-west6
-projects/single-loop-342704/locations/asia-east1
-projects/single-loop-342704/locations/asia-east2
-projects/single-loop-342704/locations/asia-northeast1
-projects/single-loop-342704/locations/asia-northeast2
-projects/single-loop-342704/locations/asia-northeast3
-projects/single-loop-342704/locations/asia-south1
-projects/single-loop-342704/locations/asia-southeast1
-projects/single-loop-342704/locations/asia-southeast2
-projects/single-loop-342704/locations/northamerica-northeast1
-projects/single-loop-342704/locations/southamerica-east1
-projects/single-loop-342704/locations/australia-southeast1
+projects/your-project-name/locations/us-central1
+projects/your-project-name/locations/us-east1
+projects/your-project-name/locations/us-east4
+projects/your-project-name/locations/us-west1
+projects/your-project-name/locations/us-west2
+projects/your-project-name/locations/us-west3
+projects/your-project-name/locations/us-west4
+projects/your-project-name/locations/europe-central2
+projects/your-project-name/locations/europe-west1
+projects/your-project-name/locations/europe-west2
+projects/your-project-name/locations/europe-west3
+projects/your-project-name/locations/europe-west6
+projects/your-project-name/locations/asia-east1
+projects/your-project-name/locations/asia-east2
+projects/your-project-name/locations/asia-northeast1
+projects/your-project-name/locations/asia-northeast2
+projects/your-project-name/locations/asia-northeast3
+projects/your-project-name/locations/asia-south1
+projects/your-project-name/locations/asia-southeast1
+projects/your-project-name/locations/asia-southeast2
+projects/your-project-name/locations/northamerica-northeast1
+projects/your-project-name/locations/southamerica-east1
+projects/your-project-name/locations/australia-southeast1
 ```
 
 In order to deploy to single/multiple regions just run `make us-east1 asia-east1`.
@@ -41,10 +41,10 @@ Make provides an easy way to speed up deployment by enabling parallelism via `ma
 
 ## Triggering Cloud Functions
 
-After deployment you'll get a URL like `http://us-east1-single-loop-342704.cloudfunctions.net/random`.
+After deployment you'll get a URL like `http://us-east1-your-project-name.cloudfunctions.net/random`.
 One way to trigger the functions is to navigate to
 ```
-http://us-east1-single-loop-342704.cloudfunctions.net/random?timeout=120&target=https://en.wikipedia.org
+http://us-east1-your-project-name.cloudfunctions.net/random?timeout=120&target=https://en.wikipedia.org
 ```
 
 After the walk finishes (see `timeout`) you'll be greated with a screenshot from the last page visited.
