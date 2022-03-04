@@ -52,6 +52,6 @@ Response headers contains a lot of useful information about the walk including n
 
 ## Results
 
-My quick tests showed that for a medium-sized web site a random walk of about 2 minutes (~20 hops) results in approximately 20MB of traffic.
+Quick tests showed that for a medium-sized web site a random walk of about 2 minutes (~20 hops) results in approximately 20MB of traffic.
 Looking at the [pricing](https://cloud.google.com/functions/pricing) we can run function 50 times (~1GB of traffic) for just < $0.10.
 Enjoy!
