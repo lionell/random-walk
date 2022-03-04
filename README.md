@@ -2,42 +2,33 @@
 
 Emulates a random user interactions starting from the target URL.
 
+Tip! Runnig `make` commands with `--dry-run` will show exactly what commands will be executed.
+
 ## Deploy Google Cloud Function
 
 List all the available regions:
 ```
-$ gcloud functions regions list
+$ make list-regions
 
-NAME
-projects/your-project-name/locations/us-central1
-projects/your-project-name/locations/us-east1
-projects/your-project-name/locations/us-east4
-projects/your-project-name/locations/us-west1
-projects/your-project-name/locations/us-west2
-projects/your-project-name/locations/us-west3
-projects/your-project-name/locations/us-west4
-projects/your-project-name/locations/europe-central2
-projects/your-project-name/locations/europe-west1
-projects/your-project-name/locations/europe-west2
-projects/your-project-name/locations/europe-west3
-projects/your-project-name/locations/europe-west6
-projects/your-project-name/locations/asia-east1
-projects/your-project-name/locations/asia-east2
-projects/your-project-name/locations/asia-northeast1
-projects/your-project-name/locations/asia-northeast2
-projects/your-project-name/locations/asia-northeast3
-projects/your-project-name/locations/asia-south1
-projects/your-project-name/locations/asia-southeast1
-projects/your-project-name/locations/asia-southeast2
-projects/your-project-name/locations/northamerica-northeast1
-projects/your-project-name/locations/southamerica-east1
-projects/your-project-name/locations/australia-southeast1
+us-central1
+us-east1
+us-west1
+europe-central2
+europe-west1
+asia-east1
+asia-northeast1
+asia-south1
+asia-southeast1
+northamerica-northeast1
+southamerica-east1
+australia-southeast1
+...
 ```
 
 In order to deploy to single/multiple regions just run `make us-east1 asia-east1`.
-One can also deploy to all(be careful) the available regions by running `make deploy`.
+One can also deploy to all(be careful) the available regions by running `make deploy-all`.
 
-Make provides an easy way to speed up deployment by enabling parallelism via `make -j 10 deploy`.
+Tip! Make use of (pun intended) `make`-s ability to execute dependencies in parallel via `-j 10` flag.
 
 ## Triggering Cloud Functions
 
