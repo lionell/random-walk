@@ -44,7 +44,7 @@ Make provides an easy way to speed up deployment by enabling parallelism via `ma
 After deployment you'll get a URL like `http://us-east1-your-project-name.cloudfunctions.net/random`.
 One way to trigger the functions is to navigate to
 ```
-http://us-east1-your-project-name.cloudfunctions.net/random?timeout=120&target=https://en.wikipedia.org
+http://us-east1-your-project-name.cloudfunctions.net/random?target=https://en.wikipedia.org
 ```
 
 After the walk finishes (see `timeout`) you'll be greated with a screenshot from the last page visited.
